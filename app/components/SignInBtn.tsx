@@ -67,7 +67,7 @@ console.log(hasSigned);
         {!isConnected && (
         <>
             <button
-          className="rounded-lg py-2 px-4 bg-blue-700 hover:border hover:border-blue-700 hover:bg-transparent"
+          className="rounded-lg py-2 px-4 bg-white  hover:border hover:border-blue-700 hover:bg-transparent hover:text-white"
           onClick={async () =>{
              await open();
              await handleSign();
@@ -80,7 +80,7 @@ console.log(hasSigned);
         {isConnected && status=='unauthenticated' &&(
             <>
             <button
-            className="rounded-lg py-2 px-4 mt-2 bg-violet-700 hover:border hover:border-violet-700 hover:bg-transparent"
+            className="rounded-lg py-2 px-4 mt-2 bg-white hover:border hover:border-violet-700 hover:bg-transparent hover:text-white"
             onClick={handleSign}
           >
             Sign Message to Login
@@ -90,7 +90,7 @@ console.log(hasSigned);
         )}
         {isConnected && status=='authenticated' && (
         <button
-        className="rounded-lg py-2 px-4 mt-2 bg-violet-700 hover:border hover:border-violet-700 hover:bg-transparent"
+        className="rounded-lg py-2 px-4 mt-2 bg-white hover:border hover:border-violet-700 hover:bg-transparent hover:text-white"
         onClick={handleSignout} 
       >
         disconnect

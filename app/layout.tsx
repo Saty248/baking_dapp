@@ -16,9 +16,10 @@ export default function RootLayout({
 }: {
   children: React.ReactNode
 }) {
+  let theme=`${inter.className} bg-gradient-to-r from-slate-500 to-slate-800`
   return (
     <html lang="en">
-      <body className={inter.className}><Providers><Nav />{children}</Providers></body>
+      <body className={theme}><Providers><Nav />{children}</Providers></body>
     </html>
   )
 }

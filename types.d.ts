@@ -13,3 +13,14 @@ type SessionProps={
     hasSigned:boolean,
     setHasSigned:(name: boolean) => void;
   }
+
+  type idexdltProp={
+    header:string,
+    body:string[]
+}
+
+type wagmiRead={
+  data?:string[];
+  isError?:boolean;
+  isLoading?:boolean
+}

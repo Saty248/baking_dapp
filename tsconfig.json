@@ -1,7 +1,7 @@
 {
   "compilerOptions": {
-    "target": "es5",
-    "lib": ["dom", "dom.iterable", "esnext"],
+    "target": "es2020",
+    "lib": ["dom", "dom.iterable", "esnext","es2020"],
     "allowJs": true,
     "skipLibCheck": true,
     "strict": true,
@@ -23,6 +23,6 @@
       "@/*": ["./*"]
     }
   },
-  "include": ["additional-env.d.ts","next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],
+  "include": ["additional-env.d.ts","next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "constants/abi_byteCode.js"],
   "exclude": ["node_modules"]
 }

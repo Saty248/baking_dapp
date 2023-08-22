@@ -2,3 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer components {
+    .h-93vh {
+        height: 93vh;
+    }
+    
+  }
